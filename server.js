@@ -31,6 +31,7 @@ io.sockets.on('connection', function(socket) {
     socket.on('disconnect', function() {
         util.writeLog(`Client disconnected: ${socket.id}`)
         delete SOCKET_LIST[socket.id];
+        delete PLAYER_LIST[socket.id];
     });
 });
 

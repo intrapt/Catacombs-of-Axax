@@ -18,6 +18,7 @@ String.prototype.capitalizeFirstLetter = function() {
 // TODO: Split parseInput() into several functions if possible
 function parseInput(inputText) {
     let cmdList = [],
+        command = "",
         input = inputText.toUpperCase().split(' ');
     if (input[0] != "") {
         for (let i = 0; i < input.length; i++) {
@@ -57,15 +58,17 @@ function parseInput(inputText) {
                 }
             }
         }
-        return parseCommand(cmdList);
+        if (cmdList[0] == 'inv') {
+            command = 'showInv';
+        } if (cmdList[0] = 'help') {
+            command = 'help';
+        } if (cmdList[0] == 'travel') {
+            command = cmdList;
+        } if (cmdList[0] == 'take' && cmdList[1][1] == 'item') {
+            command = ['take', cmdList[1][0]];
+        }
+        //parseCommand goes here
     }
-}
-
-function parseCommand(cmdList) {
-    if (cmdList[0] == 'inv') return 'showInv';
-    if (cmdList[0] == 'help') return 'help';
-    if (cmdList[0] == 'travel') return cmdList;
-    if (cmdList[0] == 'take' && cmdList[1][1] == 'item') return;
 }
 
 //TODO: Rewrite showInv() to rely on player object
@@ -190,6 +193,5 @@ module.exports = {
     help,
     takeItem,
     travel,
-    roomDesc,
-    parseCommand
+    roomDesc
 }
