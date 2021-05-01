@@ -1,6 +1,6 @@
 "use-strict";
 
-//TODO: Optimise imports
+//TODO: Optimise imports in game.js
 const fs = require('fs'),
     n2w = require('numbers2words'),
     path = require('path'),
