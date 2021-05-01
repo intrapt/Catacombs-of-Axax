@@ -4,16 +4,16 @@ const fs = require('fs'),
 
 function newPlayer(socket) {
     let player = {
-        locationList = util.parseJSON(__dirname, '../json/locs.json'),
-        itemList = util.parseJSON(__dirname, '../json/items.json'),
-        interList = util.parseJSON(__dirname, '../json/inters.json'),
-        start = true,
-        inventory = [],
-        location = 1,
-        changeLocation = (newLocation) => {
+        locationList: util.parseJSON(__dirname, '../json/locs.json'),
+        itemList: util.parseJSON(__dirname, '../json/items.json'),
+        interList: util.parseJSON(__dirname, '../json/inters.json'),
+        start: true,
+        inventory: [],
+        location: 1,
+        changeLocation: (newLocation) => {
             location = newLocation;
         },
-        takeItem = (item) => {
+        takeItem: (item) => {
             let inInv = false;
             for (i = 0; i < locationList[location].items.length; i++) {
                 if (item == locationList[location].items[i].id) {
@@ -36,7 +36,7 @@ function newPlayer(socket) {
             * Else push item to inventory
             */
         },
-        dropItem = (item) => {
+        dropItem: (item) => {
             const itemObject = {
                 id: item.id,
                 loc: "on the floor"
