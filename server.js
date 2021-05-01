@@ -3,21 +3,25 @@
 const express = require('express'),
     path = require('path'),
     game = require(path.join(__dirname, '/server/js/game.js')),
-    util = require(path.join(__dirname, '/server/js/utils.js')),
+    util = require(path.join(__dirname, './server/js/utils.js')),
+    player = require(path.join(__dirname, './server/js/player.js')),
     app = express(),
     serv = require('http').Server(app),
     io = require('socket.io')(serv, {}),
     port = 3000;
 
-let SOCKET_LIST = {};
+let SOCKET_LIST = {},
+    PLAYER_LIST = {};
 
 util.resetLog();
 app.use(express.static(path.join(__dirname,'client')));
 serv.listen(port);
 
 io.sockets.on('connection', function(socket) {
-    game.newPlayer(socket);
+    socket.id = util.uuidv4();
+    PLAYER_LIST[socket.id] = player.newPlayer(socket)
     SOCKET_LIST[socket.id] = socket;
+    util.writeLog(`Client connected: ${socket.id}`);
 
     socket.on('input', function(data){
         if (data.value != "") {
@@ -38,6 +42,8 @@ function sendText(socket, command) {
     socket.emit('newText', output);
 }
 
+// TODO: Rewrite parseCommand() to rely on player object
+// TODO: Move parseCommand() to server/js/game.js
 function parseCommand(socket, command) {
     let output = '';
     if (command == 'showInv') {
