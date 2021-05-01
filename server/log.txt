@@ -1,2 +1,0 @@
-<2021/05/01-15:03:31> Client connected: 78ae085f-6208-4a8e-a8f5-6c008f6dcf0c
-<2021/05/01-15:03:33> Client disconnected: 78ae085f-6208-4a8e-a8f5-6c008f6dcf0c
