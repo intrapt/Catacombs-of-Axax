@@ -1,0 +1,137 @@
+body {
+    margin:0%;
+    display:block;
+    color:#FFFFFF;
+    background-color:#1E1E1E;
+}
+h1 {
+    margin:0;
+    width:65vw;
+    margin-top:2vh;
+    font-weight:500;
+    font-size:1.65vw;
+    text-align:center;
+    display:inline-block;
+    font-family:"Open Sans", sans-serif;
+}
+#mainBox {
+    float:left;
+    width:65vw;
+    height:100vh;
+}
+#mainBox > p {
+    font-family:"Roboto", sans-serif;
+    width:65vw;
+    height:1vw;
+    margin-top:0;
+    margin-bottom:0;
+    font-size: 0.9vw;
+    text-align:center;
+    display:inline-block;
+}
+#leftBox {
+    float:left;
+    width:15vw;
+    height:100vh;
+    background-color:#2f2f2f;
+}
+#textBoxOuter {
+    width:65vw;
+    height:72vh;
+    margin-top:3vh;
+    overflow-y:auto;
+    position:relative;
+    overscroll-behavior-y:contain;
+}
+#textBoxInner {
+    bottom:0;
+    width:65vw;
+    height:72vh;
+    display:table-cell;
+    vertical-align:bottom;
+}
+#textBoxInner > p {
+    text-align:left;
+    margin-left:1vw;
+    margin-right:1vw;
+    word-wrap:normal;
+    font-size:0.83vw;
+    font-family:"Ubuntu", sans-serif;
+}
+#textBoxInner > p:last-child {
+    scroll-snap-align:unset;
+}
+#inputBox {
+    margin-top:3vh;
+    margin-left:1vw;
+}
+#mainInput {
+    width:62vw;
+    height:5vh;
+    border:none;
+    font-size:1vw;
+    color:#FFFFFF;
+    padding-left:1vw;
+    border-radius:10px;
+    background-color:#303030;
+    font-family:"Roboto", sans-serif;
+}
+#mainInput:focus {
+    outline:none;
+}
+#mapBox {
+    width:13vw;
+    height:25vh;
+    margin-top:2vh;
+    margin-left:1vw;
+    margin-bottom:1vh;
+    background-color:#505050;
+}
+.leftButton {
+    height:5vh;
+    width:13vw;
+    border:none;
+    margin-top:3vh;
+    margin-left:1vw;
+    line-height:1vh;
+    border-radius:5px;
+    display:inline-block;
+    background-color:#202020;
+    transition-duration:0.1s;
+}
+.leftButton:focus {
+    outline:none;
+}
+.leftButton:hover {
+    cursor:pointer;
+}
+.leftButton > p {
+    font-size:1vw;
+    color:#FFFFFF;
+    text-align:center;
+    vertical-align:middle;
+    font-family:"Open Sans", sans-serif;
+}
+.leftButton:hover {
+    background-color:#1E1E1E;
+}
+.greenText {
+    color: #00FF00;
+}
+.redText {
+    color: #FF0000;
+}
+::-webkit-scrollbar {
+    width:0.5vw;
+}
+::-webkit-scrollbar-track {
+    border-radius:3px;
+    background:#303030;
+}
+::-webkit-scrollbar-thumb {
+    border-radius:3px;
+    background:#888888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background:#555555;
+}

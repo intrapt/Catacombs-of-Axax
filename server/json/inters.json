@@ -1,0 +1,32 @@
+{
+  "0": {
+    "name": "small hole",
+    "action": "You reach through the hole and find a key.",
+    "reward": 0
+  },
+  "1": {
+    "name": "",
+    "action": "",
+    "reward": ""
+  },
+  "2": {
+    "name": "",
+    "action": "",
+    "reward": ""
+  },
+  "3": {
+    "name": "",
+    "action": "",
+    "reward": ""
+  },
+  "4": {
+    "name": "",
+    "action": "",
+    "reward": ""
+  },
+  "5": {
+    "name": "",
+    "action": "",
+    "reward": ""
+  }
+}

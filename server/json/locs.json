@@ -1,0 +1,4167 @@
+{
+  "0": {
+    "name": "Debug Room",
+    "desc": "",
+    "items": [
+      {
+        "id": 0,
+        "loc": ""
+      }
+    ],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": [
+      {
+        "id": 0,
+        "loc": ""
+      }
+    ]
+  },
+  "1": {
+    "name": "Cell",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 11,
+        "name": "cell door",
+        "bearing": "south",
+        "desc": "",
+        "req": 0
+      }
+    ],
+    "inters": [
+      {
+        "id": 0,
+        "loc": "at the bottom of the west wall"
+      }
+    ]
+  },
+  "2": {
+    "name": "",
+    "desc": "Ghostly music can be heard in the north side of the room, and several barrel staves are scattered throughout the room",
+    "items": [],
+    "exits": [
+      {
+        "id": 3,
+        "name": "corridor",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 12,
+        "name": "stone door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "3": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 2,
+        "name": "corridor",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 10,
+        "name": "stone door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "4": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 10,
+        "name": "stone door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "5": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 8,
+        "name": "iron door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 6,
+        "name": "iron door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "6": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 5,
+        "name": "iron door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 9,
+        "name": "stone door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 15,
+        "name": "iron door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "7": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 8,
+        "name": "stone door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 19,
+        "name": "iron door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "8": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 5,
+        "name": "iron door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 7,
+        "name": "stone door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 21,
+        "name": "stone door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "9": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 6,
+        "name": "stone door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 16,
+        "name": "archway",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "10": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 3,
+        "name": "stone door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 4,
+        "name": "stone door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 17,
+        "name": "wooden door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "11": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 1,
+        "name": "cell door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 20,
+        "name": "stone door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "12": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 2,
+        "name": "iron door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 20,
+        "name": "stone door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "13": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 20,
+        "name": "portcullis",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 24,
+        "name": "stone door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 25,
+        "name": "stone door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "14": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 15,
+        "name": "stone door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 32,
+        "name": "stone door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "15": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 14,
+        "name": "stone door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 6,
+        "name": "iron door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 16,
+        "name": "archway",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "16": {
+    "name": "",
+    "desc": "Someone has scrawled 'The Swords of Eannbrycg killed six vampires here' on the south wall",
+    "items": [],
+    "exits": [
+      {
+        "id": 9,
+        "name": "archway",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 15,
+        "name": "archway",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 22,
+        "name": "portcullis",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "17": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 10,
+        "name": "wooden door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "18": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 26,
+        "name": "corridor",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 34,
+        "name": "stone door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "19": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 7,
+        "name": "iron door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 30,
+        "name": "iron door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 31,
+        "name": "archway",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "20": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 11,
+        "name": "stone door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 12,
+        "name": "stone door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 13,
+        "name": "portcullis",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 36,
+        "name": "stone door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "21": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 8,
+        "name": "north",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 32,
+        "name": "stone door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 41,
+        "name": "stone door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "22": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 16,
+        "name": "portcullis",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 23,
+        "name": "iron door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 32,
+        "name": "stone door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 43,
+        "name": "iron door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "23": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 22,
+        "name": "iron door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 35,
+        "name": "iron door",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "24": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 13,
+        "name": "stone door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 36,
+        "name": "iron door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "25": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 13,
+        "name": "stone door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 33,
+        "name": "iron door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 44,
+        "name": "iron door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "26": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 18,
+        "name": "corridor",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 27,
+        "name": "stone door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 34,
+        "name": "archway",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "27": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 26,
+        "name": "stone door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 28,
+        "name": "stone door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 38,
+        "name": "stone door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "28": {
+    "name": "",
+    "desc": "Someone has scrawled a drawing of a door on the south wall",
+    "items": [],
+    "exits": [
+      {
+        "id": 27,
+        "name": "stone door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 29,
+        "name": "stone door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "29": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 28,
+        "name": "stone door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 30,
+        "name": "archway",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 40,
+        "name": "stone door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 45,
+        "name": "portcullis",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "30": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 19,
+        "name": "iron door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 29,
+        "name": "archway",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "31": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 19,
+        "name": "archway",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 41,
+        "name": "stone door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 54,
+        "name": "corridor",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "32": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 21,
+        "name": "stone door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 22,
+        "name": "stone door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 14,
+        "name": "stone door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "33": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 25,
+        "name": "iron door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 47,
+        "name": "stone door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 34,
+        "name": "secret passageway",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "34": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 18,
+        "name": "stone door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 26,
+        "name": "archway",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 48,
+        "name": "iron door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "35": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 23,
+        "name": "iron door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 46,
+        "name": "iron door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "36": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 20,
+        "name": "stone door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 24,
+        "name": "iron door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 47,
+        "name": "corridor",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "37": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 38,
+        "name": "stone door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 48,
+        "name": "stone door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 51,
+        "name": "stone door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "38": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 27,
+        "name": "stone door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 37,
+        "name": "stone door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 39,
+        "name": "iron door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "39": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 38,
+        "name": "iron door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 45,
+        "name": "stone door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "40": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 29,
+        "name": "stone door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 50,
+        "name": "stone door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "41": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 21,
+        "name": "stone door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 31,
+        "name": "stone door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 42,
+        "name": "iron door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 55,
+        "name": "corridor",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "42": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 41,
+        "name": "iron door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 43,
+        "name": "archway",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "43": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 22,
+        "name": "iron door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 42,
+        "name": "archway",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "44": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 25,
+        "name": "iron door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "45": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 29,
+        "name": "portcullis",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 39,
+        "name": "stone door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 50,
+        "name": "stone door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 53,
+        "name": "stone door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "46": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 35,
+        "name": "iron door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "47": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 36,
+        "name": "corridor",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 33,
+        "name": "stone door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 48,
+        "name": "iron door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "48": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 34,
+        "name": "iron door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 37,
+        "name": "stone door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 47,
+        "name": "iron door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 56,
+        "name": "stone door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "49": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 52,
+        "name": "stone door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 57,
+        "name": "iron door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "50": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 40,
+        "name": "stone door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 45,
+        "name": "stone door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 61,
+        "name": "iron door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "51": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 37,
+        "name": "stone door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 57,
+        "name": "stone door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "52": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 49,
+        "name": "stone door",
+        "bearing": "west",
+        "desc": "",
+        "req": [
+          1
+        ]
+      },
+      {
+        "id": 53,
+        "name": "stone door",
+        "bearing": "east",
+        "desc": "",
+        "req": [
+          1
+        ]
+      }
+    ],
+    "inters": []
+  },
+  "53": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 45,
+        "name": "stone door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 52,
+        "name": "stone door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 64,
+        "name": "iron door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "54": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 31,
+        "name": "corridor",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 62,
+        "name": "stone door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "55": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 41,
+        "name": "corridor",
+        "bearing": "east",
+        "desc": "",
+        "req": []
+      },
+      {
+        "id": 66,
+        "name": "archway",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "56": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 48,
+        "name": "stone door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 59,
+        "name": "iron door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 60,
+        "name": "stone door",
+        "bearing": "east",
+        "desc": "",
+        "req": [
+          1
+        ]
+      }
+    ],
+    "inters": []
+  },
+  "57": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 49,
+        "name": "iron door",
+        "bearing": "north",
+        "desc": "",
+        "req": [
+          1
+        ]
+      },
+      {
+        "id": 51,
+        "name": "stone door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "58": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 59,
+        "name": "stone door",
+        "bearing": "east",
+        "desc": "",
+        "req": [
+          1
+        ]
+      },
+      {
+        "id": 67,
+        "name": "portcullis",
+        "bearing": "south",
+        "desc": "",
+        "req": [
+          3
+        ]
+      }
+    ],
+    "inters": []
+  },
+  "59": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 56,
+        "name": "iron door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 58,
+        "name": "stone door",
+        "bearing": "west",
+        "desc": "",
+        "req": [
+          1
+        ]
+      }
+    ],
+    "inters": []
+  },
+  "60": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 59,
+        "name": "stone door",
+        "bearing": "west",
+        "desc": "",
+        "req": [
+          1
+        ]
+      },
+      {
+        "id": 63,
+        "name": "archway",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "61": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 50,
+        "name": "iron door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 62,
+        "name": "iron door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "62": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 54,
+        "name": "stone door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 61,
+        "name": "iron door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "63": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 60,
+        "name": "archway",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 64,
+        "name": "iron door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "64": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 53,
+        "name": "iron door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 63,
+        "name": "iron door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 73,
+        "name": "portcullis",
+        "bearing": "south",
+        "desc": "",
+        "req": [
+          3
+        ]
+      }
+    ],
+    "inters": []
+  },
+  "65": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 70,
+        "name": "portcullis",
+        "bearing": "west",
+        "desc": "",
+        "req": [
+          3
+        ]
+      },
+      {
+        "id": 78,
+        "name": "stone door",
+        "bearing": "south",
+        "desc": "",
+        "req": [
+          1
+        ]
+      }
+    ],
+    "inters": []
+  },
+  "66": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 55,
+        "name": "archway",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 79,
+        "name": "stone door",
+        "bearing": "south",
+        "desc": "",
+        "req": [
+          1
+        ]
+      }
+    ],
+    "inters": []
+  },
+  "67": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 58,
+        "name": "portcullis",
+        "bearing": "north",
+        "desc": "",
+        "req": [
+          3
+        ]
+      },
+      {
+        "id": 68,
+        "name": "stone door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 75,
+        "name": "stone door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "68": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 67,
+        "name": "stone door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 76,
+        "name": "iron door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "69": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 71,
+        "name": "stone door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "70": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 65,
+        "name": "portcullis",
+        "bearing": "east",
+        "desc": "",
+        "req": [
+          3
+        ]
+      },
+      {
+        "id": 74,
+        "name": "stone door",
+        "bearing": "west",
+        "desc": "",
+        "req": [
+          1
+        ]
+      },
+      {
+        "id": 77,
+        "name": "archway",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "71": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 69,
+        "name": "stone door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 72,
+        "name": "stone door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "72": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 71,
+        "name": "stone door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 73,
+        "name": "iron door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 80,
+        "name": "archway",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "73": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 64,
+        "name": "portcullis",
+        "bearing": "north",
+        "desc": "",
+        "req": [
+          3
+        ]
+      },
+      {
+        "id": 72,
+        "name": "iron door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 74,
+        "name": "stone door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "74": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 70,
+        "name": "stone door",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 73,
+        "name": "stone door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "75": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 67,
+        "name": "stone door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 87,
+        "name": "iron door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "76": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 68,
+        "name": "iron door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 88,
+        "name": "stone door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "77": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 70,
+        "name": "archway",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 90,
+        "name": "corridor",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "78": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 65,
+        "name": "stone door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 79,
+        "name": "archway",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 85,
+        "name": "portcullis",
+        "bearing": "south",
+        "desc": "",
+        "req": []
+      }
+    ],
+    "inters": []
+  },
+  "79": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 66,
+        "name": "stone door",
+        "bearing": "north",
+        "desc": "",
+        "req": [
+          1
+        ]
+      },
+      {
+        "id": 78,
+        "name": "archway",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 86,
+        "name": "stone door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "80": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 72,
+        "name": "archway",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 82,
+        "name": "stone door",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "81": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 82,
+        "name": "portcullis",
+        "bearing": "east",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 88,
+        "name": "portcullis",
+        "bearing": "west",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 93,
+        "name": "stone door",
+        "bearing": "south",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "82": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "83": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "84": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "85": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "iron door",
+        "bearing": "north",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "86": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "87": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "88": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "89": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "90": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "91": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "92": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "93": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "94": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "95": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "96": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "97": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "98": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "99": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "100": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "101": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "102": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "103": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "104": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "105": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "106": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "107": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "108": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "109": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "110": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "111": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "112": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "113": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "114": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "115": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "116": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "117": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "118": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "119": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "120": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "121": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "122": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "123": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "124": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "125": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "126": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "127": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "128": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "129": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "130": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "131": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "132": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "133": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "134": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "135": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "136": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "137": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "138": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "139": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "140": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "141": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "142": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "143": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "144": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "145": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "146": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "147": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "148": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "149": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "150": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "151": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "152": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      },
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  },
+  "153": {
+    "name": "",
+    "desc": "",
+    "items": [],
+    "exits": [
+      {
+        "id": 0,
+        "name": "",
+        "bearing": "",
+        "desc": "",
+        "req": null
+      }
+    ],
+    "inters": []
+  }
+}

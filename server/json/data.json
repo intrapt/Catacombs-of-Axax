@@ -1,0 +1,56 @@
+{
+  "commands": {
+    "take": [
+      "TAKE",
+      "PICK UP",
+      "GRAB",
+      "COLLECT"
+    ],
+    "use": [
+      "USE",
+      "INTERACT WITH",
+      "ACTIVATE"
+    ],
+    "inv": [
+      "INVENTORY",
+      "INV",
+      "I"
+    ],
+    "look": [
+      "LOOK",
+      "L"
+    ],
+    "travel": [
+      "NORTH",
+      "SOUTH",
+      "EAST",
+      "WEST"
+    ],
+    "help": [
+      "HELP"
+    ],
+    "with": [
+      "WITH"
+    ]
+  },
+  "help": {
+    "commands": [
+      "This is not a complete list. Some commands may accept other verbs",
+      "'INVENTORY': Lists all objects in inventory",
+      "'LOOK': Returns description of surroundings",
+      "'TAKE': Removes item from surroundings and deposits it in inventory",
+      "'NORTH/SOUTH/EAST/WEST': used to move between locations",
+      "'USE': Activate object or use it to interact with another object"
+    ],
+    "abbrevs": [
+      "'INVENTORY': 'INV' or 'I'",
+      "'LOOK': 'L'"
+    ],
+    "parser": [
+      "This program uses a command parser based on Zork 1: <a href=\"http://people.cs.bris.ac.uk/~ecsnp/games/IEEE_zork.pdf\">http://people.cs.bris.ac.uk/~ecsnp/games/IEEE_zork.pdf</a>",
+      "This means that a command is 'One line of text terminated by a carriage return (the enter key)'. Unlike Zork 1, however, all words are not distinguished by their first nine letters",
+      "A command only allows for one 'action' at a time. This means that while 'DROP KEY THEN GO NORTH' won't work, 'OPEN DOOR WITH KEY' will work",
+      "While this can allow for more complex commands, they probably won't be recognised by the command parser"
+    ]
+  }
+}

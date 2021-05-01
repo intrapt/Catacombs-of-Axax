@@ -1,0 +1,107 @@
+{
+  "0": {
+    "name": "cell key",
+    "desc": "A rusty key. It looks like it can fit in your cell's door.",
+    "hidden": false
+  },
+  "1": {
+    "name": "crowbar",
+    "desc": "An old crowbar. It looks strong enough to force open weak doors.",
+    "hidden": false
+  },
+  "2": {
+    "name": "spellbook",
+    "desc": "A mangled spellbook. Only a few spells are still readable, and even fewer are useful",
+    "hidden": false
+  },
+  "3": {
+    "name": "openMidPortcullis",
+    "desc": "",
+    "hidden": true
+  },
+  "4": {
+    "name": "",
+    "desc": "",
+    "hidden": false
+  },
+  "5": {
+    "name": "",
+    "desc": "",
+    "hidden": false
+  },
+  "6": {
+    "name": "",
+    "desc": "",
+    "hidden": false
+  },
+  "7": {
+    "name": "",
+    "desc": "",
+    "hidden": false
+  },
+  "8": {
+    "name": "",
+    "desc": "",
+    "hidden": false
+  },
+  "9": {
+    "name": "",
+    "desc": "",
+    "hidden": false
+  },
+  "10": {
+    "name": "",
+    "desc": "",
+    "hidden": false
+  },
+  "11": {
+    "name": "",
+    "desc": "",
+    "hidden": false
+  },
+  "12": {
+    "name": "",
+    "desc": "",
+    "hidden": false
+  },
+  "13": {
+    "name": "",
+    "desc": "",
+    "hidden": false
+  },
+  "14": {
+    "name": "",
+    "desc": "",
+    "hidden": false
+  },
+  "15": {
+    "name": "",
+    "desc": "",
+    "hidden": false
+  },
+  "16": {
+    "name": "",
+    "desc": "",
+    "hidden": false
+  },
+  "17": {
+    "name": "",
+    "desc": "",
+    "hidden": false
+  },
+  "18": {
+    "name": "",
+    "desc": "",
+    "hidden": false
+  },
+  "19": {
+    "name": "",
+    "desc": "",
+    "hidden": false
+  },
+  "20": {
+    "name": "",
+    "desc": "",
+    "hidden": false
+  }
+}
