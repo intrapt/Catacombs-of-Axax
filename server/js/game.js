@@ -1,5 +1,6 @@
 "use-strict";
 
+//TODO: Optimise imports
 const fs = require('fs'),
     n2w = require('numbers2words'),
     path = require('path'),
@@ -15,19 +16,8 @@ String.prototype.capitalizeFirstLetter = function() {
     return this.charAt(0).toUpperCase() + this.slice(1);
 }
 
-function newPlayer(socket) {
-    socket.id = util.uuidv4();
-    socket.start = true;
-    socket.inventory = [];
-    socket.location = 1;
-    socket.locs = locs;
-    socket.inters = inters;
-    socket.items = items;
-
-    socket.emit('newText', roomDesc(socket));
-    util.writeLog(`Client connected: ${socket.id}`);
-}
-
+// TODO: Rewrite parseInput() to rely on player object
+// TODO: Split parseInput() into several functions if possible
 function parseInput(inputText) {
     let cmdList = [],
         input = inputText.toUpperCase().split(' ');
@@ -80,6 +70,7 @@ function parseCommand(cmdList) {
     if (cmdList[0] == 'take' && cmdList[1][1] == 'item') return;
 }
 
+//TODO: Move showInv() into player object
 function showInv(inventory) {
     let output = '',
         end = '';
@@ -106,6 +97,8 @@ function help() {
     return output;
 }
 
+//TODO: Replace takeItem() with player.addItem()
+// Deprecated, now part of player object
 function takeItem(socket, item) {
     let location = socket.location;
     let inInv = false;
@@ -124,6 +117,7 @@ function takeItem(socket, item) {
     }
 }
 
+// TODO: Rewrite travel() to use player.changeLocation()
 function travel(location, direction) {
     room = socket.locs[location];
     for (let i = 0; i < room.exits.length; i++) {
@@ -134,6 +128,8 @@ function travel(location, direction) {
     return location;
 }
 
+// TODO: Rewrite roomDesc() to use player object instead of socket
+// TODO: Rewrite roomDesc() to make sense
 function roomDesc(socket) { // Generates a room description based on the objects in the room. It's not elegant (at all), but it works
     let desc = '',
         room = socket.locs[socket.location],
