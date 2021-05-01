@@ -54,10 +54,17 @@ function resetLog() {
     );
 }
 
+function parseJSON(dirname, path) {
+    return JSON.parse(
+        fs.readFileSync(path.join(dir, path))
+    );
+}
+
 module.exports = {
     uuidv4,
     vowel,
     green,
     writeLog,
-    resetLog
+    resetLog,
+    parseJSON
 }
