@@ -1,5 +1,3 @@
-"use-strict";
-
 const express = require('express'),
     path = require('path'),
     game = require(path.join(__dirname, '/server/js/game.js')),
