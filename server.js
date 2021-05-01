@@ -7,15 +7,14 @@ const express = require('express'),
     player = require(path.join(__dirname, './server/js/player.js')),
     app = express(),
     serv = require('http').Server(app),
-    io = require('socket.io')(serv, {}),
-    port = 3000;
+    io = require('socket.io')(serv, {});
 
 let SOCKET_LIST = {},
     PLAYER_LIST = {};
 
 util.resetLog();
 app.use(express.static(path.join(__dirname,'client')));
-serv.listen(port);
+serv.listen(3000);
 
 io.sockets.on('connection', function(socket) {
     socket.id = util.uuidv4();
