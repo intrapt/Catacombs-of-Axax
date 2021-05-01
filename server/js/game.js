@@ -186,7 +186,6 @@ function roomDesc(socket) { // Generates a room description based on the objects
 
 module.exports = {
     parseInput,
-    newPlayer,
     showInv,
     help,
     takeItem,
