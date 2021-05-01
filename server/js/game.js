@@ -1,5 +1,3 @@
-"use-strict";
-
 //TODO: Optimise imports in game.js
 const fs = require('fs'),
     n2w = require('numbers2words'),
@@ -70,7 +68,7 @@ function parseCommand(cmdList) {
     if (cmdList[0] == 'take' && cmdList[1][1] == 'item') return;
 }
 
-//TODO: Move showInv() into player object
+//TODO: Rewrite showInv() to rely on player object
 function showInv(inventory) {
     let output = '',
         end = '';
@@ -80,7 +78,9 @@ function showInv(inventory) {
         output += 'You are not carrying anything';
     }
     for (let i = 0; i < inventory.length; i++) {
-        if (inventory[i][1] != 1) { end = 's'; }
+        if (inventory[i][1] != 1) {
+            end = 's';
+        }
         output += (`<br>${t2W.toWords(inventory[i][1]).capitalizeFirstLetter()} ${items[inventory[i][0]].name}${end}`);
     }
     return output;
