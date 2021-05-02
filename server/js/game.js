@@ -1,74 +1,75 @@
-//TODO: Optimise imports in game.js
 const fs = require('fs'),
     n2w = require('numbers2words'),
     path = require('path'),
     util = require(path.join(__dirname, './utils.js')),
-    data = JSON.parse(fs.readFileSync(path.join(__dirname, '../json/data.json'))),
-    items = JSON.parse(fs.readFileSync(path.join(__dirname, '../json/items.json'))),
-    inters = JSON.parse(fs.readFileSync(path.join(__dirname, '../json/inters.json'))),
-    locs = JSON.parse(fs.readFileSync(path.join(__dirname, '../json/locs.json'))),
-    t2w = new n2w('EN_US'),
-    commands = data.commands;
+    t2w = new n2w('EN_US');
 
 String.prototype.capitalizeFirstLetter = function() {
     return this.charAt(0).toUpperCase() + this.slice(1);
 }
 
-// TODO: Rewrite parseInput() to rely on player object
-// TODO: Split parseInput() into several functions if possible
-function parseInput(inputText) {
-    let cmdList = [],
-        command = "",
-        input = inputText.toUpperCase().split(' ');
-    if (input[0] != "") {
-        for (let i = 0; i < input.length; i++) {
-            for (let j in commands)
-                for (let k in commands[j]) {
-                    if (commands[j][k] == `${input[i]} ${input[i + 1]}`) {
-                        if (cmdList.push(j), "travel" == j) {
-                            if (!commands.travel.includes(j)) j = "";
-                            cmdList.push(j);
-                        }
-                        delete input[i], delete input[i + 1];
-                        break;
-                    }
-                    if (commands[j][k] == input[i]) {
-                        cmdList.push(j), "travel" == j && cmdList.push(input[i]), delete input[i];
-                        break;
-                    }
-                }
-            for (let j in items) {
-                if (items[j].name.toUpperCase() == `${input[i]} ${input[i + 1]}`) {
-                    cmdList.push([j, "item"]), delete input[i], delete input[i + 1];
-                    break;
-                }
-                if (items[j].name.toUpperCase() == input[i]) {
-                    cmdList.push([j, "item"]), delete input[i];
-                    break;
-                }
+function parseInputText(player, inputText) {
+    const commandList = inputText.toUpperCase().split(' ');
+    let parsedCommand = [];
+
+    if (commandList[0] != '') {
+        for (let i = 0; i < commandList.length; i++) {
+            const commandWords = parseCommandWords(commandList, i),
+                itemsAndInters = parseItemsAndInters(player, commandList, i);
+
+            parsedCommand.push(commandWords[0]);
+            if (commandWords[1] != null) {
+                parsedCommand.push(commandWords[1]);
             }
-            for (let j in inters) {
-                if (inters[j].name.toUpperCase() == `${input[i]} ${input[i + 1]}`) {
-                    cmdList.push([j, "inter"]), delete input[i], delete input[i + 1];
-                    break;
-                }
-                if (inters[j].name.toUpperCase() == input[i]) {
-                    cmdList.push([j, "inter"]), delete input[i];
-                    break;
+
+            if (itemsAndInters != null) {
+                parsedCommand.push(itemsAndInters[0])
+                delete commandList[i];
+                if (item[1] == 0) {
+                    delete commandList[i + 1];
                 }
             }
         }
-        if (cmdList[0] == 'inv') {
-            command = 'showInv';
-        } if (cmdList[0] = 'help') {
-            command = 'help';
-        } if (cmdList[0] == 'travel') {
-            command = cmdList;
-        } if (cmdList[0] == 'take' && cmdList[1][1] == 'item') {
-            command = ['take', cmdList[1][0]];
-        }
-        //parseCommand goes here
     }
+    // Removes falsy values
+    return parsedCommand.filter(x => x);
+    
+}
+
+function parseItemsAndInters(player, commandList, index) {
+    let object = player.itemList,
+        type = 'item';
+
+    for (let i = 0; i < 2; i++) {
+        if (i == 1) {
+            object = player.interList;
+            type = 'inter';
+        }
+        for (let j in object) {
+            if (object[j].name.toUpperCase() == `${commandList[index]} ${commandList[index + 1]}`) {
+                return [[j, type], 0];
+            } else if (object[j].name.toUpperCase() == commandList[index]) {
+                return [[j, type], 1];
+            }
+        }
+    }
+}
+
+function parseCommandWords(commandList, index) {
+    const commands = util.parseJSON(__dirname, '../json/data.json').commands;
+    let output = [null, null];
+
+    for (let i in commands) {
+        for (let j in commands[i]) {
+            if (commands[i][j] == commandList[index]) {
+                output[0] = i;
+                if (i == 'travel') {
+                    output[1] = commandList[index];
+                }
+            }
+        }
+    }
+    return output;
 }
 
 //TODO: Rewrite showInv() to rely on player object
@@ -90,7 +91,8 @@ function showInv(inventory) {
 }
 
 function help() {
-    let output = '';
+    let data = util.parseJSON(__dirname, '../json/data.json'),
+        output = '';
     output += '<b>Commands</b>';
     for (let i = 0; i < data.help.commands.length; i++) output += `<br>${data.help.commands[i]}`;
     output += '<br><br><b>Command Abbreviations</b>';
@@ -188,10 +190,10 @@ function roomDesc(socket) { // Generates a room description based on the objects
 }
 
 module.exports = {
-    parseInput,
     showInv,
     help,
     takeItem,
     travel,
-    roomDesc
+    roomDesc,
+    parseInputText
 }
