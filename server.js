@@ -18,6 +18,7 @@ io.sockets.on('connection', function(socket) {
     socket.id = util.uuidv4();
     PLAYER_LIST[socket.id] = player.newPlayer(socket)
     SOCKET_LIST[socket.id] = socket;
+    socket.emit('newText', roomDesc(socket));
     util.writeLog(`Client connected: ${socket.id}`);
 
     socket.on('input', function(data){
