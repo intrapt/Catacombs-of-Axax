@@ -54,10 +54,8 @@ function resetLog() {
     );
 }
 
-function parseJSON(dirname, path) {
-    return JSON.parse(
-        fs.readFileSync(path.join(dir, path))
-    );
+function parseJSON(dir, pathName) {
+    return JSON.parse(fs.readFileSync(path.join(dir, pathName)));
 }
 
 module.exports = {
