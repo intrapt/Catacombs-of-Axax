@@ -2,7 +2,7 @@ const fs = require('fs'),
     path = require('path'),
     util = require(path.join(__dirname, './utils.js'));
 
-function newPlayer(socket) {
+function newPlayer() {
     let player = {
         locationList: util.parseJSON(__dirname, '../json/locs.json'),
         itemList: util.parseJSON(__dirname, '../json/items.json'),
@@ -52,12 +52,12 @@ function newPlayer(socket) {
              * Check inventory for item
              * If it exists then remove it from inventory then push item
              * object to room
-             * TODO: Make dropItem() only drop one item if there are multiple in inventory
+             * TODO: Make dropItem() only drop one item if there are multiple
+             * in inventory
              */
         },
     };
 
-    socket.emit('newText', roomDesc(socket));
     return player;
 }
 
