@@ -16,7 +16,7 @@ serv.listen(3000);
 
 io.sockets.on('connection', function(socket) {
     socket.id = util.uuidv4();
-    PLAYER_LIST[socket.id] = player.newPlayer(socket)
+    PLAYER_LIST[socket.id] = player.newPlayer(socket);
     SOCKET_LIST[socket.id] = socket;
 
     //socket.emit('newText', roomDesc(socket));
@@ -25,13 +25,16 @@ io.sockets.on('connection', function(socket) {
     socket.on('input', function(data){
         if (data.value != "") {
             socket.emit('newText', `> ${data.value}`);
-            let command = game.parseInputText(PLAYER_LIST[socket.id], data.value);
+            let command = game.parseInputText(
+                PLAYER_LIST[socket.id],
+                data.value
+            );
             //sendText(socket, command);
         }
     });
 
     socket.on('disconnect', function() {
-        util.writeLog(`Client disconnected: ${socket.id}`)
+        util.writeLog(`Client disconnected: ${socket.id}`);
         delete SOCKET_LIST[socket.id];
         delete PLAYER_LIST[socket.id];
     });
