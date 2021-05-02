@@ -57,7 +57,7 @@ function parseItemsAndInters(player, commandList, index) {
 
 function parseCommandWords(commandList, index) {
     const commands = util.parseJSON(__dirname, '../json/data.json').commands;
-    let output = [null, null];
+    let output = [];
 
     for (let i in commands) {
         for (let j in commands[i]) {
