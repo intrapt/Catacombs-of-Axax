@@ -18,13 +18,14 @@ io.sockets.on('connection', function(socket) {
     socket.id = util.uuidv4();
     PLAYER_LIST[socket.id] = player.newPlayer(socket)
     SOCKET_LIST[socket.id] = socket;
+
     socket.emit('newText', roomDesc(socket));
     util.writeLog(`Client connected: ${socket.id}`);
 
     socket.on('input', function(data){
         if (data.value != "") {
             socket.emit('newText', `> ${data.value}`);
-            let command = game.parseInput(data.value);
+            //let command = game.parseInput(data.value);
             sendText(socket, command);
         }
     });
