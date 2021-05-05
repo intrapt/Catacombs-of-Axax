@@ -1,12 +1,6 @@
 const fs = require('fs'),
-    n2w = require('numbers2words'),
     path = require('path'),
-    util = require(path.join(__dirname, './utils.js')),
-    t2w = new n2w('EN_US');
-
-String.prototype.capitalizeFirstLetter = function() {
-    return this.charAt(0).toUpperCase() + this.slice(1);
-}
+    util = require(path.join(__dirname, './utils.js'));
 
 function parseInputText(player, inputText) {
     const commandList = inputText.toUpperCase().split(' ');
@@ -72,128 +66,118 @@ function parseCommandWords(commandList, index) {
     return output;
 }
 
-//TODO: Rewrite showInv() to rely on player object
-function showInv(inventory) {
-    let output = '',
+function showInv(player) {
+    let output = 'You are carrying:',
+        inventory = player.inventory,
+        items = player.itemList,
         end = '';
-    if (inventory.length != 0) {
-        output += 'You are carrying:';
-    } else {
-        output += 'You are not carrying anything';
+    
+    if (inventory.length == 0) {
+        return 'You are not carrying anything';
     }
     for (let i = 0; i < inventory.length; i++) {
         if (inventory[i][1] != 1) {
             end = 's';
         }
-        output += (`<br>${t2W.toWords(inventory[i][1]).capitalizeFirstLetter()} ${items[inventory[i][0]].name}${end}`);
+        output += '<br>' + util.numToStr(inventory[i][1]);
+        output += ` ${items[inventory[i][0]].name}${end}</br>`;
     }
     return output;
 }
 
 function help() {
     let data = util.parseJSON(__dirname, '../json/data.json'),
-        output = '';
-    output += '<b>Commands</b>';
-    for (let i = 0; i < data.help.commands.length; i++) output += `<br>${data.help.commands[i]}`;
+        output = '<b>Commands</b>';
+    
+    for (let i = 0; i < data.help.commands.length; i++) {
+        output += `<br>${data.help.commands[i]}`;
+    }
     output += '<br><br><b>Command Abbreviations</b>';
-    for (let i = 0; i < data.help.abbrevs.length; i++) output += `<br>${data.help.abbrevs[i]}`;
+    for (let i = 0; i < data.help.abbrevs.length; i++) {
+        output += `<br>${data.help.abbrevs[i]}`;
+    }
     output += '<br><br><b>Command Parser</b>';
-    for (let i = 0; i < data.help.parser.length; i++) output += `<br>${data.help.parser[i]}`;
+    for (let i = 0; i < data.help.parser.length; i++) {
+        output += `<br>${data.help.parser[i]}`;
+    }
     return output;
 }
 
-//TODO: Replace takeItem() with player.addItem()
-// Deprecated, now part of player object
-function takeItem(socket, item) {
-    let location = socket.location;
-    let inInv = false;
-    for (let i = 0; i < socket.locs[location].items.length; i++) {
-        if (item == socket.locs[location].items[i].id) {
-            socket.locs[location].items.splice(i, 1);
-            for (let i = 0; i < inventory.length; i++) {
-                if (item == inventory[i][0]) {
-                    socket.inventory[i][1] += 1;
-                    inInv = true;
-                }
-            } if (inInv == false) {
-                socket.inventory.push([item, 1]);
-            }
+function travel(player, direction) {
+    for (let i = 0; i < player.room.exits.length; i++) {
+        if (player.room.exits[i].bearing.toUpperCase() == direction) {
+            player.location = player.room.exits[i].id;
+            player.room = player.locationList[player.location];
         }
     }
 }
 
-// TODO: Rewrite travel() to use player.changeLocation()
-function travel(location, direction) {
-    room = socket.locs[location];
-    for (let i = 0; i < room.exits.length; i++) {
-        if (room.exits[i].bearing.toUpperCase() == direction) {
-            location = room.exits[i].id;
-        }
-    }
-    return location;
-}
-
-// TODO: Rewrite roomDesc() to use player object instead of socket
-// TODO: Rewrite roomDesc() to make sense
-function roomDesc(socket) { // Generates a room description based on the objects in the room. It's not elegant (at all), but it works
-    let desc = '',
-        room = socket.locs[socket.location],
-        interL = room.inters.length,
-        itemL = room.items.length,
-        locL = room.exits.length;
-
-    if (socket.start == true) {
-        desc += `You wake up in ${util.vowel(room.name.toLowerCase())} ${room.name.toLowerCase()}. `;
-        socket.start = false;
+function generateRoomDescription(player) {
+    let output = '';
+    if (player.start) {
+        output += 'You wake up in ';
+        player.start = false;
     } else {
-        desc += `You are in ${util.vowel(room.name.toLowerCase())} ${room.name.toLowerCase()}. `;
+        output += 'You are in ';
     }
-    if (room.desc != '') { desc += `${room.desc}. `; }
+    output += util.vowel(player.room.name.toLowerCase()) + ' ';
+    output += player.room.name.toLowerCase() + '. ';
+    output += player.room.desc;
+    output += generateItemsIntersLocs(player.room.items, player.itemList);
+    output += generateItemsIntersLocs(player.room.inters, player.interList);
+    output += generateExitLocations(player);
 
-    if (itemL >= 2) {
-        desc += 'There is ';
-        for (let i = 0; i < itemL; i++) {
-            if (itemL - 1 != i) {
-                desc += `${util.vowel(items[room.items[i].id].name)} ${util.green(items[room.items[i].id].name)} ${room.items[i].loc}, `
-            } else {
-                desc += `and ${util.vowel(items[room.items[i].id].name)} ${util.green(items[room.items[i].id].name)} ${room.items[i].loc}. `;
+    return output;
+}
+
+function generateItemsIntersLocs(object, objectList) { 
+    let output = '';
+    if (object.length >= 2) {
+        output += 'There is ';
+        for (let i = 0; i < object.length; i++) {
+            if (object.length - 1 != i) {
+                output += 'and';
             }
+            output += util.vowel(objectList[object[i].id].name);
+            output += util.green(objectList[object[i].id].name);
+            output += object[i].loc + '. ';
         }
-    } else if (itemL == 1) {
-        desc += `There is ${util.vowel(items[room.items[0].id].name)} ${util.green(items[room.items[0].id].name)} ${room.items[0].loc}. `;
+    } else if (object.length == 1) {
+        output += 'There is ';
+        output += util.vowel(objectList[object[0].id].name);
+        output += util.green(objectList[object[0].id].name);
+        output += object[0].loc + '. ';
     }
-    if (interL >= 2) {
-        desc += 'There is ';
-        for (let i = 0; i < interL; i++) {
-            if (interL - 1 != i) {
-                desc += `${util.vowel(inters[room.inters[i].id].name)} ${util.green(inters[room.inters[i].id].name)} ${room.inters[i].loc}, `
-            } else {
-                desc += `and ${util.vowel(inters[room.inters[i].id].name)} ${util.green(inters[room.inters[i].id].name)} ${room.inters[i].loc}. `;
+    return output;
+}
+
+function generateExitLocations(player) {
+    let output = '';
+    if (player.room.exits.length >= 2) {
+        output += 'There is ';
+        for (let i = 0; i < player.room.exits.length; i++) {
+            if (player.room.exits.length - 1 != i) {
+                output += 'and';
             }
+            output += util.vowel(player.room.exits[i].name);
+            output += util.green(player.room.exits[i].name);
+            output += 'to the ';
+            output += player.room.exits[i].bearing + '. ';
         }
-    } else if (interL == 1) {
-        desc += `There is ${util.vowel(inters[room.inters[0].id].name)} ${util.green(inters[room.inters[0].id].name)} ${room.inters[0].loc}. `;
+    } else if (player.room.exits.length == 1) {
+        output += 'There is ';
+        output += util.vowel(player.room.exits[0].name);
+        output += util.green(player.room.exits[0].name);
+        output += 'to the ';
+        output += player.room.exits[0].bearing + '. ';
     }
-    if (locL >= 2) {
-        desc += 'There is ';
-        for (let i = 0; i < locL; i++) {
-            if (locL - 1 != i) {
-                desc += `${util.vowel(room.exits[i].name)} ${util.green(room.exits[i].name)} to the ${room.exits[i].bearing}, `
-            } else {
-                desc += `and ${util.vowel(room.exits[i].name)} ${util.green(room.exits[i].name)} to the ${room.exits[i].bearing}. `;
-            }
-        }
-    } else if (locL == 1) {
-        desc += `There is ${util.vowel(room.exits[0].name)} ${util.green(room.exits[0].name)} to the ${room.exits[0].bearing}. `;
-    }
-    return `<b>${room.name}</b><br>${desc}`;
+    return output;
 }
 
 module.exports = {
     showInv,
     help,
-    takeItem,
     travel,
-    roomDesc,
-    parseInputText
+    parseInputText,
+    generateRoomDescription
 }
