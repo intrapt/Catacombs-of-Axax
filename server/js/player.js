@@ -10,6 +10,7 @@ function newPlayer() {
         start: true,
         inventory: [],
         location: 1,
+        room: util.parseJSON(__dirname, '../json/locs.json')[1],
         changeLocation: (newLocation) => {
             location = newLocation;
         },
@@ -39,7 +40,7 @@ function newPlayer() {
         dropItem: (item) => {
             const itemObject = {
                 id: item.id,
-                loc: "on the floor"
+                loc: 'on the floor',
             };
             for (i = 0; i < inventory.length; i++) {
                 if (item.id == inventory[i].id) {
