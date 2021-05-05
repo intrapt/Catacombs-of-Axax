@@ -80,7 +80,8 @@ function showInv(player) {
             end = 's';
         }
         output += '<br>' + util.numToStr(inventory[i][1]);
-        output += ` ${items[inventory[i][0]].name}${end}</br>`;
+        output += ' ' + items[inventory[i][0]].name;
+        output += end + '</br>';
     }
     return output;
 }
