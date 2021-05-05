@@ -1,6 +1,12 @@
 const fs = require('fs'),
     path = require('path'),
-    moment = require('moment');;
+    moment = require('moment'),
+    n2w = require('numbers2words'),
+    t2w = new n2w('EN_US');
+
+String.prototype.capitalizeFirstLetter = function() {
+    return this.charAt(0).toUpperCase() + this.slice(1);
+}
 
 function uuidv4() {
     return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
@@ -21,7 +27,7 @@ function vowel(word) { // Returns preposition based on first letter of word
 }
 
 function green(word) {
-    return `<span class="greenText">${word}</span>`;
+    return `<span class="greenText"> ${word} </span>`;
 }
 
 function now() {
@@ -58,11 +64,16 @@ function parseJSON(dir, pathName) {
     return JSON.parse(fs.readFileSync(path.join(dir, pathName)));
 }
 
+function numToStr(number) {
+    return t2W.toWords(number).capitalizeFirstLetter();
+}
+
 module.exports = {
     uuidv4,
     vowel,
     green,
     writeLog,
     resetLog,
-    parseJSON
+    parseJSON,
+    numToStr
 }
