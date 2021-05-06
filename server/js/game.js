@@ -1,6 +1,4 @@
-const fs = require('fs'),
-    path = require('path'),
-    util = require(path.join(__dirname, './utils.js'));
+const utils = require('./utils.js');
 
 function parseInputText(player, inputText) {
     const commandList = inputText.toUpperCase().split(' ');
@@ -25,9 +23,7 @@ function parseInputText(player, inputText) {
             }
         }
     }
-    // Removes falsy values
-    return parsedCommand.filter(x => x);
-    
+    return parseCommand(player, parsedCommand.filter(x => x));
 }
 
 function parseItemsAndInters(player, commandList, index) {
@@ -50,7 +46,7 @@ function parseItemsAndInters(player, commandList, index) {
 }
 
 function parseCommandWords(commandList, index) {
-    const commands = util.parseJSON(__dirname, '../json/data.json').commands;
+    const commands = utils.parseJSON(__dirname, '../json/data.json').commands;
     let output = [];
 
     for (let i in commands) {
@@ -66,6 +62,8 @@ function parseCommandWords(commandList, index) {
     return output;
 }
 
+function parseCommand(player, comandList) {}
+
 function showInv(player) {
     let output = 'You are carrying:',
         inventory = player.inventory,
@@ -79,7 +77,7 @@ function showInv(player) {
         if (inventory[i][1] != 1) {
             end = 's';
         }
-        output += '<br>' + util.numToStr(inventory[i][1]);
+        output += '<br>' + utils.numToStr(inventory[i][1]);
         output += ' ' + items[inventory[i][0]].name;
         output += end + '</br>';
     }
@@ -87,7 +85,7 @@ function showInv(player) {
 }
 
 function help() {
-    let data = util.parseJSON(__dirname, '../json/data.json'),
+    let data = utils.parseJSON(__dirname, '../json/data.json'),
         output = '<b>Commands</b>';
     
     for (let i = 0; i < data.help.commands.length; i++) {
@@ -121,7 +119,7 @@ function generateRoomDescription(player) {
     } else {
         output += 'You are in ';
     }
-    output += util.vowel(player.room.name.toLowerCase()) + ' ';
+    output += utils.vowel(player.room.name.toLowerCase()) + ' ';
     output += player.room.name.toLowerCase() + '. ';
     output += player.room.desc;
     output += generateItemsIntersLocs(player.room.items, player.itemList);
@@ -132,53 +130,55 @@ function generateRoomDescription(player) {
 }
 
 function generateItemsIntersLocs(object, objectList) { 
-    let output = '';
+    let output = ''
+        end = ', ';
     if (object.length >= 2) {
         output += 'There is ';
         for (let i = 0; i < object.length; i++) {
-            if (object.length - 1 != i) {
+            if (object.length - 1 == i) {
                 output += 'and';
+                end += '. '
             }
-            output += util.vowel(objectList[object[i].id].name);
-            output += util.green(objectList[object[i].id].name);
-            output += object[i].loc + '. ';
+            output += utils.vowel(objectList[object[i].id].name);
+            output += utils.green(objectList[object[i].id].name);
+            output += object[i].loc + end;
         }
     } else if (object.length == 1) {
         output += 'There is ';
-        output += util.vowel(objectList[object[0].id].name);
-        output += util.green(objectList[object[0].id].name);
+        output += utils.vowel(objectList[object[0].id].name);
+        output += utils.green(objectList[object[0].id].name);
         output += object[0].loc + '. ';
     }
     return output;
 }
 
 function generateExitLocations(player) {
-    let output = '';
+    let output = '',
+        end = ', ';
     if (player.room.exits.length >= 2) {
         output += 'There is ';
         for (let i = 0; i < player.room.exits.length; i++) {
-            if (player.room.exits.length - 1 != i) {
+            if (player.room.exits.length - 1 == i) {
                 output += 'and';
+                end += '. ';
             }
-            output += util.vowel(player.room.exits[i].name);
-            output += util.green(player.room.exits[i].name);
-            output += 'to the ';
-            output += player.room.exits[i].bearing + '. ';
+            output += utils.vowel(player.room.exits[i].name);
+            output += utils.green(player.room.exits[i].name);
+            output += 'to the ' + player.room.exits[i].bearing + end;
         }
     } else if (player.room.exits.length == 1) {
         output += 'There is ';
-        output += util.vowel(player.room.exits[0].name);
-        output += util.green(player.room.exits[0].name);
-        output += 'to the ';
-        output += player.room.exits[0].bearing + '. ';
+        output += utils.vowel(player.room.exits[0].name);
+        output += utils.green(player.room.exits[0].name);
+        output += 'to the ' + player.room.exits[0].bearing + '. ';
     }
     return output;
 }
 
 module.exports = {
-    showInv,
     help,
     travel,
+    showInv,
     parseInputText,
-    generateRoomDescription
+    generateRoomDescription,
 }

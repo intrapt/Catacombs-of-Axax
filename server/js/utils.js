@@ -69,11 +69,11 @@ function numToStr(number) {
 }
 
 module.exports = {
-    uuidv4,
-    vowel,
     green,
-    writeLog,
+    vowel,
+    uuidv4,
+    numToStr,
     resetLog,
+    writeLog,
     parseJSON,
-    numToStr
 }

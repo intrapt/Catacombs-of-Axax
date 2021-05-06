@@ -1,19 +1,14 @@
-const fs = require('fs'),
-    path = require('path'),
-    util = require(path.join(__dirname, './utils.js'));
+const parseJSON = require('./utils.js').parseJSON;
 
 function newPlayer() {
     let player = {
-        locationList: util.parseJSON(__dirname, '../json/locs.json'),
-        itemList: util.parseJSON(__dirname, '../json/items.json'),
-        interList: util.parseJSON(__dirname, '../json/inters.json'),
+        locationList: parseJSON(__dirname, '../json/locs.json'),
+        itemList: parseJSON(__dirname, '../json/items.json'),
+        interList: parseJSON(__dirname, '../json/inters.json'),
         start: true,
         inventory: [],
         location: 1,
-        room: util.parseJSON(__dirname, '../json/locs.json')[1],
-        changeLocation: (newLocation) => {
-            location = newLocation;
-        },
+        room: parseJSON(__dirname, '../json/locs.json')[1],
         takeItem: (item) => {
             let inInv = false;
             for (i = 0; i < locationList[location].items.length; i++) {
@@ -29,13 +24,12 @@ function newPlayer() {
                     }
                 }
             }
-           /**
-            * Check if an item in the room has the same ID as the given item
-            * Then remove it from the room
-            * If same type of item is in inventory then increment counter for
-            * it by 1
-            * Else push item to inventory
-            */
+    /**
+    * Check if an item in the room has the same ID as the given item
+    * Then remove it from the room
+    * If same type of item is in inventory then increment counter for it by 1
+    * Else push item to inventory
+    */
         },
         dropItem: (item) => {
             const itemObject = {
@@ -45,17 +39,16 @@ function newPlayer() {
             for (i = 0; i < inventory.length; i++) {
                 if (item.id == inventory[i].id) {
                     inventory.splice(i, 1);
-                    locationList(location).items.push(itemObject);
+                    locationList[location].items.push(itemObject);
                 }
             }
-            /**
-             * Create item object
-             * Check inventory for item
-             * If it exists then remove it from inventory then push item
-             * object to room
-             * TODO: Make dropItem() only drop one item if there are multiple
-             * in inventory
-             */
+    /**
+     * Create item object
+     * Check inventory for item
+     * If it exists then remove it from inventory then push item
+     * object to room
+     * TODO: Make dropItem() only drop one item if there are multiple in inventory
+     */
         },
     };
 
