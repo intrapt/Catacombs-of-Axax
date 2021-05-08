@@ -1,5 +1,6 @@
 const utils = require('./utils.js');
 
+
 function parseInputText(player, inputText) {
     const commandList = inputText.toUpperCase().split(' ');
     let parsedCommand = [];
@@ -62,7 +63,24 @@ function parseCommandWords(commandList, index) {
     return output;
 }
 
-function parseCommand(player, comandList) {}
+function parseCommand(player, command) {
+    let output = '';
+    switch (command[0]) {
+        case 'inv':
+            output = showInv(player);
+            break;
+        case 'help':
+            output = help();
+            break;
+        case 'travel':
+            player.travel(command[1]);
+            output = generateRoomDescription(player);
+            break;
+        default:
+            break;
+    }
+    return output;
+}
 
 function showInv(player) {
     let output = 'You are carrying:',
@@ -89,26 +107,17 @@ function help() {
         output = '<b>Commands</b>';
     
     for (let i = 0; i < data.help.commands.length; i++) {
-        output += `<br>${data.help.commands[i]}`;
+        output += '<br>' + data.help.commands[i];
     }
     output += '<br><br><b>Command Abbreviations</b>';
     for (let i = 0; i < data.help.abbrevs.length; i++) {
-        output += `<br>${data.help.abbrevs[i]}`;
+        output += '<br>' + data.help.abbrevs[i];
     }
     output += '<br><br><b>Command Parser</b>';
     for (let i = 0; i < data.help.parser.length; i++) {
-        output += `<br>${data.help.parser[i]}`;
+        output += '<br>' + data.help.parser[i];
     }
     return output;
-}
-
-function travel(player, direction) {
-    for (let i = 0; i < player.room.exits.length; i++) {
-        if (player.room.exits[i].bearing.toUpperCase() == direction) {
-            player.location = player.room.exits[i].id;
-            player.room = player.locationList[player.location];
-        }
-    }
 }
 
 function generateRoomDescription(player) {
@@ -137,7 +146,7 @@ function generateItemsIntersLocs(object, objectList) {
         for (let i = 0; i < object.length; i++) {
             if (object.length - 1 == i) {
                 output += 'and';
-                end += '. '
+                end = '. '
             }
             output += utils.vowel(objectList[object[i].id].name);
             output += utils.green(objectList[object[i].id].name);
@@ -159,8 +168,8 @@ function generateExitLocations(player) {
         output += 'There is ';
         for (let i = 0; i < player.room.exits.length; i++) {
             if (player.room.exits.length - 1 == i) {
-                output += 'and';
-                end += '. ';
+                output += 'and ';
+                end = '. ';
             }
             output += utils.vowel(player.room.exits[i].name);
             output += utils.green(player.room.exits[i].name);
@@ -176,9 +185,7 @@ function generateExitLocations(player) {
 }
 
 module.exports = {
-    help,
-    travel,
-    showInv,
+    parseCommand,
     parseInputText,
     generateRoomDescription,
 }

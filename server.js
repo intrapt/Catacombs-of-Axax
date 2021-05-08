@@ -3,7 +3,8 @@ const http = require('http'),
     socket = require('socket.io'),
     game = require('./server/js/game.js'),
     utils = require('./server/js/utils.js'),
-    player = require('./server/js/player.js');
+    Player = require('./server/js/player.js'),
+    { port } = require('./config/config.json');
 
 const app = express(),
     serv = http.Server(app),
@@ -13,11 +14,11 @@ let SOCKET_LIST = {};
 
 utils.resetLog();
 app.use(express.static('client'));
-serv.listen(3000);
+serv.listen(port);
 
 io.sockets.on('connection', function(socket) {
     socket.id = utils.uuidv4();
-    socket.player = player.newPlayer();
+    socket.player = new Player();
     SOCKET_LIST[socket.id] = socket;
 
     socket.emit('newText', game.generateRoomDescription(socket.player));
@@ -25,8 +26,8 @@ io.sockets.on('connection', function(socket) {
 
     socket.on('input', function(data){
         if (data.value != "") {
-            let command = game.parseInputText(socket.player, data.value);
-            sendText(socket, command);
+            let output = game.parseInputText(socket.player, data.value);
+            sendText(socket, data, output);
         }
     });
 
@@ -36,8 +37,7 @@ io.sockets.on('connection', function(socket) {
     });
 });
 
-function sendText(socket, command) {
-    let output = game.parseCommand(socket.player, command);
+function sendText(socket, data, output) {
     socket.emit('newText', `> ${data.value}`);
     socket.emit('newText', output);
 }
